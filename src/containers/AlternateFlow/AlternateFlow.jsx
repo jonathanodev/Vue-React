@@ -85,18 +85,6 @@ export default class AlternateFlow extends Component {
                         onNextStep={this.handleNextStep}
                     />
                 )}
-                {step === 2 && (
-                    <Face smile={smile} onCapture={this.handleCapture} />
-                )}
-                {step === 3 && <TurnHead onCapture={this.handleCapture} />}
-                <input
-                    type="file"
-                    name="image"
-                    accept="image/*"
-                    capture="user"
-                    ref={ref => (this.element = ref)}
-                    style={{ opacity: 0, zIindex: 99 }}
-                />
             </div>
         );
     }
