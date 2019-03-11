@@ -73,18 +73,7 @@ export default class AlternateFlow extends Component {
         const { step, smile } = this.state;
         return (
             <div>
-                {!step && (
-                    <Prepare
-                        onGoBack={this.handleGoBack}
-                        onNextStep={this.handleNextStep}
-                    />
-                )}
-                {step === 1 && (
-                    <SelfiesTip
-                        onGoBack={this.handleGoBack}
-                        onNextStep={this.handleNextStep}
-                    />
-                )}
+
             </div>
         );
     }
